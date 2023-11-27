@@ -1,0 +1,10 @@
+.body{<style>*{background-image: url("LOGIN.png"); } </style>
+}
+.divider:after, 
+
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
