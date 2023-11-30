@@ -12,22 +12,40 @@
   <title>Document</title>
 </head>
 
-<body >
+<body style="background-color:rgb(175, 134, 104);">
+  <header>
+    <nav class="navbar">
+        <ul class="b">
+            <a href="https://www.bookbub.com/blog/read-free-books-online-now">  
+                <img src="book1.png"  width="45px" class="img" style="width: 40px;"> 
+            </a>
+        </ul>
+        <ul> 
+            
+            <li><a href="Home.html" ><i class="fas fa-envelope"></i> Home</a></li>
+            <li><a href="About.html" ><i class="fas fa-envelope"></i> About</a></li>
+            <li><a href="Books.html" ><i class="fas fa-envelope"></i> Books</a></li>
+            <li><a href="Reviews.html" ><i class="fas fa-search"></i> Reviews</a></li>
+            <li><a href="Favorites.html" ><i class="fas fa-home"></i> Favorites</a></li>
+       
+        </ul>
+    </nav>
+  </header>
   <section class="vh-100">
     <div class="container py-5 h-100">
       <div class="row d-flex align-items-center justify-content-center h-100">
         <div class="col-md-8 col-lg-7 col-xl-6 col-12">
-          <img src="book.png" class="img-fluid" alt="">
+          <img src="Opening-Book.gif" class="img-fluid" alt="">
         </div>
         <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1 col-12">
           <form>
             <div class="form-outline mb-4">
-              <input type="email" id="form1Example13" class="form-control form-control-lg" />
+              <input type="email" id="email" class="form-control form-control-lg" />
               <label class="form-label" for="form1Example13">Email address</label>
             </div>
 
             <div class="form-outline mb-4">
-              <input type="password" id="form1Example23" class="form-control form-control-lg" />
+              <input type="password" id="password" class="form-control form-control-lg" />
               <label class="form-label" for="form1Example23">Password</label>
             </div>
 
@@ -36,23 +54,50 @@
                 <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
                 <label class="form-check-label" for="form1Example3"> Remember me </label>
               </div>
-              <a href="#!" class="text-muted">Forgot password?</a>
+              <a href="Forgot.html" class="text-muted">Forgot password?</a>
             </div>
 
             <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+            <button style="float: ;" type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
 
             <div class="divider d-flex align-items-center my-4">
               <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
             </div>
 
-            <a class="btn btn-primary btn-lg btn-block" style="background-color: #3b5998" href="Home.html" role="button">
-              <i class="fab fa-facebook-f me-2"></i>Continue as Guest
+            <a style="float: right;" class="btn btn-primary btn-lg btn-block" style="background-color: #3b5998" href="Home.html" role="button">
+              <i  class="fab fa-facebook-f me-2"></i>Continue as Guest
             </a>
           </form>
         </div>
       </div>
     </div>
   </section>
+  <script>
+    let emailRegex = /[a-zA-Z.-_]+@+[a-z]+\.+[a-z]{2,3}$/;
+    let passwordRegex=/^[A-Z][a-z]+[!"#$%&()*+,-./:;<=>?@[]^_`{|}~]{8,50}$/;
+
+    function validation(){
+            let emailInput = document.getElementById('email');
+            let emailError = document.getElementById('emailError');
+            let passwordInput = document.getElementById('password');
+            let passwordError = document.getElementById('passwordError');
+            
+            emailError.innerText = '';
+            passwordError.innerText = '';
+            
+          if(!emailRegex.test(emailInput.value)){
+            emailError.innerText = 'invalid email format';
+            return;
+        }
+
+        
+
+       }
+       alert('success');
+
+
+
+  </script>
 </body>
 
 </html>
