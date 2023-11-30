@@ -40,7 +40,7 @@ body {
     text-decoration: none;
 }
 
-.navbar a:hover {
+.navbar b:hover {
     background-color: rgba(29, 25, 25, 0.479) ;
     color: rgb(220, 125, 125);
 }

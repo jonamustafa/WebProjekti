@@ -9,6 +9,20 @@ flex: 1;
 height: 1px;
 background: #d00404;
 }
+
+.h2{
+    margin-bottom: 20%;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 3.5%;
+}
+.img-fluid{
+    margin-bottom: 50%;
+}
 .navbar {
     background-color: rgb(79, 50, 50);
     overflow: hidden;
@@ -44,7 +58,7 @@ background: #d00404;
     text-decoration: none;
 }
 
-.navbar a:hover {
+.navbar b:hover {
     background-color: rgba(29, 25, 25, 0.479) ;
     color: rgb(220, 125, 125);
 }
